@@ -17,6 +17,9 @@ export const ItemContainer = styled.div`
   width: 90%;
   margin-top: 3rem;
 
+  border-bottom: 2px dotted #bdbcd073;
+  padding-bottom: 24px;
+
   .repo-link {
     text-decoration: none;
   }
@@ -36,9 +39,11 @@ export const ItemContainer = styled.div`
   .project-details a {
     letter-spacing: 2px;
     font-size: 15px;
+    margin-top: 5px;
   }
 
   @media (max-width: 768px) {
+    border: none;
     flex-direction: ${(props) =>
       props.cardRight ? "column-reverse" : "column"};
 

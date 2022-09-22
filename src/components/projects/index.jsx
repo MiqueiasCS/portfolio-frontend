@@ -5,9 +5,30 @@ export const Projects = () => {
   return (
     <Main>
       <ItemContent
+        project={"Calculadora"}
+        descript={"Veja o repositório do projeto"}
+        linkRep={"https://github.com/MiqueiasCS/calculadora_react"}
+      >
+        <p className="project-text">
+          Uma calculadora simples feita com ReactJs e Styled-components onde é
+          possível efetuar operações básicas (somar, subtrair, multiplicar e
+          dividir) e calcular uma exponencial.
+        </p>
+
+        <a
+          href="https://calculadora-react-ltib.vercel.app/"
+          rel="noopener noreferrer"
+          target={"_blank"}
+        >
+          Link
+        </a>
+      </ItemContent>
+
+      <ItemContent
         project={"PCD-Tech"}
         descript={"Veja o repositório do projeto"}
         linkRep={"https://github.com/MiqueiasCS/provihack1"}
+        cardPositionRight
       >
         <p className="project-text">
           Trabalho em equipe para o hackton "ProviHack pra Todos" criado para
@@ -30,7 +51,6 @@ export const Projects = () => {
         project={"Jogo da Memória"}
         descript={"Veja o repositório do projeto"}
         linkRep={"https://github.com/MiqueiasCS/jogo_da_memoria"}
-        cardPositionRight
       >
         <p className="project-text">
           Projeto de um Jogo da memória criado utilizando html,css e javascript.
@@ -52,6 +72,7 @@ export const Projects = () => {
         project={"Gerador de senhas"}
         descript={"Veja o repositório do projeto"}
         linkRep={"https://github.com/MiqueiasCS/Gerador-de-senhas"}
+        cardPositionRight
       >
         <p className="project-text">
           Gerador de senhas aleatórias de até 25 dígitos (letras maiúsculas e
